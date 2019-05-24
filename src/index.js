@@ -18,13 +18,27 @@ const developer = {
   url: "https://migueldiganchi.github.io/"
 };
 
-function App() {
-  return (
-    <Holder title={appTitle}>
-        <Accordion foldings={foldings} />
-        <Developer developer={developer} />
-    </Holder>
-  );
+class App extends React.Component {
+  state = {
+    activeDeveloper: false
+  };
+
+  componentDidMount () {
+    setTimeout(() => {
+      this.setState({activeDeveloper: true});
+    }, 600);
+  }
+  
+  render () {
+    return (
+      <Holder title={appTitle}>
+          <Accordion foldings={foldings} />
+          <Developer 
+            isActive={this.state.activeDeveloper}
+            developer={developer} />
+      </Holder>
+    );
+  } 
 }
 
 const rootElement = document.getElementById("root");
