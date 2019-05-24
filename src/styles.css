@@ -56,9 +56,9 @@ body {
   color: #666;
 }
 .accordion .accordion-fold .accordion-fold-content {
-  transition: all 0.333s ease !important;
-  -moz-transition: all 0.333s ease !important;
-  -webkit-transition: all 0.333s ease !important;
+  transition: all 0.333s ease;
+  -moz-transition: all 0.333s ease;
+  -webkit-transition: all 0.333s ease;
   color: #c9c9c9;
   padding: 0;
   height: 0;
@@ -80,7 +80,13 @@ body {
 
 /* Developer */
 .dev {
+  transition: left 0.666s ease-in-out;
   padding: 21px;
+  position: relative;
+  left: -300%;
+}
+.dev.active {
+  left: 0;
 }
 .dev a {
   color: #333;
