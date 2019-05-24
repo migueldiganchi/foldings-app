@@ -9,10 +9,9 @@ Use the node package manager
 ```bash
 npm install
 ```
+
 ## Run it
 
-Use the node package manager 
-
 ```bash
-npm start
+npm start # use sudo if your o.s. required it
 ```
