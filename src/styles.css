@@ -1,0 +1,90 @@
+html,
+body {
+  background-color: #d7d7d8;
+}
+
+.App {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: #333;
+  width: 450px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    width: initial;
+    position: relative;
+    margin: 0 6px;
+  }
+}
+
+.accordion {
+  border: solid 9px #e9e9e9;
+  background-color: #e9e9e9;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+.accordion .accordion-fold .accordion-fold-header {
+  /* border */
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px; 
+  /* transition */
+  transition: box-shadow 0.333s ease, color 0.333s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.333s ease, color 0.333s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.333s ease, color 0.333s ease-in-out;  
+  background-color: #fff;
+  margin-bottom: 9px;
+  cursor: pointer;
+  font-size: 14.4px;
+  padding: 15px;
+  box-shadow: 1px 2px 3px #333;
+  color: #c9c9c9;
+}
+.accordion .accordion-fold:last-child .accordion-fold-header {
+  margin-bottom: 0;
+}
+
+.accordion .accordion-fold.active:last-child .accordion-fold-content {
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+
+.accordion .accordion-fold .accordion-fold-header:hover {
+  color: #666;
+}
+.accordion .accordion-fold .accordion-fold-content {
+  transition: all 0.333s ease !important;
+  -moz-transition: all 0.333s ease !important;
+  -webkit-transition: all 0.333s ease !important;
+  color: #c9c9c9;
+  padding: 0;
+  height: 0;
+  padding: 0 9px;
+  overflow: hidden;
+}
+
+.accordion .accordion-fold.active .accordion-fold-header {
+  color: #333;
+  box-shadow: 1px 1px 2px #222;
+  -moz-box-shadow: 1px 1px 2px #222;
+  -webkit-box-shadow: 1px 1px 2px #222;
+}
+.accordion .accordion-fold.active .accordion-fold-content {
+  color: #333;
+  height: initial;
+  margin-bottom: 9px;
+}
+
+/* Developer */
+.dev {
+  padding: 21px;
+}
+.dev a {
+  color: #333;
+}
+.dev a:hover {
+  color: #111;
+}
